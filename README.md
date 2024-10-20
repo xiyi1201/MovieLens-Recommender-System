@@ -29,9 +29,9 @@ Key takeaways:
 1. total 19 generes
 2. total 1664 unique items (movies)
 3. the average rating per user is centered between 3.0 and 4.5 
-![Distribution_of_ratings](/Users/Cecilia/MovieLens-Recommender-System/Distribution_of_ratings.png)
-![Ratings_by_gender](/Users/Cecilia/MovieLens-Recommender-System/Ratings_by_gender.png)
-![Ratings_by_age](/Users/Cecilia/MovieLens-Recommender-System/Ratings_by_age.png)
+![Distribution_of_ratings](Distribution_of_ratings.png)
+![Ratings_by_gender](Ratings_by_gender.png)
+![Ratings_by_age](Ratings_by_age.png)
 4. If we assume that the number of ratings correlates with the popularity or viewership of the movies, then movies with a rating of 3 are the most popular or most viewed, followed closely by those rated 4 and then 5. Movies rated 1 and 2 are less popular or have been viewed less often.
 5. There is not too much correlation between genres and ratings.
 
@@ -61,7 +61,7 @@ Factorization increases the information density of the sparse User-Item matrix.
 
 ### **Algorithms**
 - `SVD()`, `KNNBasic()`, `NMF()`, `SlopeOne()`, `CoClustering()`
-- ![alg_result](/Users/Cecilia/MovieLens-Recommender-System/alg_result.png)
+- ![alg_result](alg_result.png)
 
 ### **Fine-tuning and Optimization**
 - `hybrid_recommendation`: Hybrid recommendation that combines SVD and KNNBasic.
@@ -69,7 +69,7 @@ Factorization increases the information density of the sparse User-Item matrix.
     - param item_id: The item ID to predict the rating for.
     - param switch_threshold: The threshold for switching between SVD and KNNBasic.
     - return: The estimated rating.
-- ![Architecture](/Users/Cecilia/MovieLens-Recommender-System/Arch.png)
+- ![Architecture](Arch.png)
 
 ### **Handling Cold Starts**
 (For users with no or very little history (cold start problem), consider the following strategies)
